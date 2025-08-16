@@ -47,29 +47,185 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="bg-gradient-to-br from-orange-500 via-white to-green-600 pt-20 pb-16 relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-orange-500/90 via-white/95 to-green-600/90"></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+                 
+
+ <section id="home" class="krishna-janmashtami-bg pt-20 pb-16 relative overflow-hidden">
+        <!-- Mandala Pattern Background -->
+        <div class="absolute inset-0 opacity-20">
+            <svg class="w-full h-full" viewBox="0 0 800 600">
+                <defs>
+                    <pattern id="mandala" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+                        <circle cx="100" cy="100" r="80" fill="none" stroke="#fbbf24" stroke-width="2"/>
+                        <circle cx="100" cy="100" r="60" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+                        <circle cx="100" cy="100" r="40" fill="none" stroke="#d97706" stroke-width="1"/>
+                        <path d="M100,20 L110,90 L100,100 L90,90 Z" fill="#fbbf24" opacity="0.6"/>
+                        <path d="M180,100 L110,110 L100,100 L110,90 Z" fill="#fbbf24" opacity="0.6"/>
+                        <path d="M100,180 L90,110 L100,100 L110,110 Z" fill="#fbbf24" opacity="0.6"/>
+                        <path d="M20,100 L90,90 L100,100 L90,110 Z" fill="#fbbf24" opacity="0.6"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#mandala)"/>
+            </svg>
+        </div>
+
+        <!-- Decorative Krishna Elements -->
+        <div class="absolute inset-0">
+            <!-- Peacock Feathers -->
+            <div class="absolute top-10 left-10 text-8xl animate-pulse" style="filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.5));">🦚</div>
+            <div class="absolute top-20 right-20 text-6xl animate-bounce" style="animation-delay: 0.5s; filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.5));">🪈</div>
+            <div class="absolute bottom-20 left-20 text-7xl animate-pulse" style="animation-delay: 1s; filter: drop-shadow(0 0 10px rgba(236, 72, 153, 0.5));">🌸</div>
+            <div class="absolute bottom-10 right-10 text-6xl animate-spin" style="animation-duration: 8s; filter: drop-shadow(0 0 12px rgba(251, 191, 36, 0.7));">🕉️</div>
+            <div class="absolute top-1/2 left-1/4 text-5xl animate-bounce" style="animation-delay: 1.5s;">🦋</div>
+            <div class="absolute top-1/3 right-1/3 text-5xl animate-pulse" style="animation-delay: 2s;">🌺</div>
+            <div class="absolute top-2/3 left-1/2 text-4xl animate-bounce" style="animation-delay: 0.8s;">🪷</div>
+            <div class="absolute top-1/4 right-1/2 text-4xl animate-pulse" style="animation-delay: 1.2s;">🎭</div>
+        </div>
+        
+        <!-- Golden Sparkles -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="sparkle absolute top-1/4 left-1/4"></div>
+            <div class="sparkle absolute top-1/3 right-1/4" style="animation-delay: 1s;"></div>
+            <div class="sparkle absolute bottom-1/3 left-1/3" style="animation-delay: 2s;"></div>
+            <div class="sparkle absolute bottom-1/4 right-1/3" style="animation-delay: 0.5s;"></div>
+            <div class="sparkle absolute top-1/2 left-1/6" style="animation-delay: 1.8s;"></div>
+            <div class="sparkle absolute bottom-1/2 right-1/6" style="animation-delay: 0.3s;"></div>
+            <div class="sparkle absolute top-3/4 left-2/3" style="animation-delay: 2.5s;"></div>
+            <div class="sparkle absolute top-1/6 right-2/3" style="animation-delay: 1.3s;"></div>
+        </div>
+
+        <!-- Radial Light Effects -->
+        <div class="absolute inset-0">
+            <div class="absolute top-1/4 left-1/4 w-32 h-32 bg-yellow-400 rounded-full opacity-30 blur-xl animate-pulse"></div>
+            <div class="absolute bottom-1/3 right-1/4 w-40 h-40 bg-pink-400 rounded-full opacity-25 blur-2xl animate-pulse" style="animation-delay: 1s;"></div>
+            <div class="absolute top-2/3 left-2/3 w-36 h-36 bg-blue-400 rounded-full opacity-20 blur-xl animate-pulse" style="animation-delay: 2s;"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
             <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
-                    Excellence in <span class="text-orange-600">Healthcare Education</span>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 krishna-text-glow">
+                    Excellence in <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-orange-400 to-pink-400 animate-pulse">Healthcare Education</span>
                 </h1>
-                <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto font-medium">
+                <p class="text-xl text-yellow-100 mb-8 max-w-3xl mx-auto drop-shadow-lg font-medium">
                     Empowering the next generation of healthcare professionals with comprehensive training programs and hands-on experience
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button onclick="scrollToCourses()" class="bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors shadow-lg">
-                        Explore Courses
+                    <button onclick="scrollToCourses()" class="krishna-btn-primary px-8 py-4 rounded-xl font-bold text-lg transform hover:scale-110 transition-all duration-300 shadow-2xl">
+                        ✨ Explore Courses ✨
                     </button>
-                    <button onclick="scrollToContact()" class="border-2 border-green-600 text-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-600 hover:text-white transition-colors">
-                        Get Started
+                    <button onclick="scrollToContact()" class="krishna-btn-secondary px-8 py-4 rounded-xl font-bold text-lg transform hover:scale-110 transition-all duration-300 shadow-2xl">
+                        🌟 Get Started 🌟
                     </button>
                 </div>
             </div>
         </div>
-    </section>
 
+        <style>
+            .krishna-janmashtami-bg {
+                background: 
+                    radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.8) 0%, transparent 40%),
+                    radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.7) 0%, transparent 40%),
+                    radial-gradient(circle at 40% 80%, rgba(251, 191, 36, 0.6) 0%, transparent 40%),
+                    linear-gradient(135deg, 
+                        #1e1b4b 0%,     /* Deep navy */
+                        #312e81 15%,    /* Dark purple */
+                        #4c1d95 30%,    /* Purple */
+                        #7c3aed 45%,    /* Bright purple */
+                        #a855f7 60%,    /* Light purple */
+                        #ec4899 75%,    /* Pink */
+                        #f59e0b 90%,    /* Orange */
+                        #fbbf24 100%    /* Golden */
+                    );
+                position: relative;
+                min-height: 100vh;
+            }
+            
+            .krishna-janmashtami-bg::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: 
+                    radial-gradient(circle at 50% 50%, rgba(251, 191, 36, 0.3) 0%, transparent 60%),
+                    conic-gradient(from 0deg at 50% 50%, 
+                        rgba(59, 130, 246, 0.2) 0deg,
+                        rgba(236, 72, 153, 0.2) 72deg,
+                        rgba(251, 191, 36, 0.2) 144deg,
+                        rgba(168, 85, 247, 0.2) 216deg,
+                        rgba(59, 130, 246, 0.2) 288deg,
+                        rgba(59, 130, 246, 0.2) 360deg
+                    );
+                animation: rotate 20s linear infinite;
+            }
+            
+            .sparkle {
+                width: 4px;
+                height: 4px;
+                background: linear-gradient(45deg, #fbbf24, #f59e0b);
+                border-radius: 50%;
+                animation: sparkle 3s ease-in-out infinite;
+                box-shadow: 0 0 10px #fbbf24, 0 0 20px #f59e0b, 0 0 30px #fbbf24;
+            }
+            
+            .krishna-text-glow {
+                text-shadow: 
+                    0 0 10px rgba(251, 191, 36, 0.8),
+                    0 0 20px rgba(251, 191, 36, 0.6),
+                    0 0 30px rgba(251, 191, 36, 0.4),
+                    0 0 40px rgba(251, 191, 36, 0.2);
+            }
+            
+            .krishna-btn-primary {
+                background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+                color: #1e1b4b;
+                border: 3px solid #fbbf24;
+                box-shadow: 
+                    0 0 20px rgba(251, 191, 36, 0.6),
+                    inset 0 0 20px rgba(255, 255, 255, 0.2);
+            }
+            
+            .krishna-btn-primary:hover {
+                background: linear-gradient(135deg, #fcd34d 0%, #fbbf24 50%, #f59e0b 100%);
+                box-shadow: 
+                    0 0 30px rgba(251, 191, 36, 0.8),
+                    inset 0 0 30px rgba(255, 255, 255, 0.3);
+            }
+            
+            .krishna-btn-secondary {
+                background: linear-gradient(135deg, rgba(236, 72, 153, 0.9) 0%, rgba(168, 85, 247, 0.9) 100%);
+                color: white;
+                border: 3px solid #ec4899;
+                box-shadow: 
+                    0 0 20px rgba(236, 72, 153, 0.6),
+                    inset 0 0 20px rgba(255, 255, 255, 0.2);
+            }
+            
+            .krishna-btn-secondary:hover {
+                background: linear-gradient(135deg, #ec4899 0%, #a855f7 100%);
+                box-shadow: 
+                    0 0 30px rgba(236, 72, 153, 0.8),
+                    inset 0 0 30px rgba(255, 255, 255, 0.3);
+            }
+            
+            @keyframes sparkle {
+                0%, 100% { 
+                    transform: scale(0) rotate(0deg);
+                    opacity: 0;
+                }
+                50% { 
+                    transform: scale(1) rotate(180deg);
+                    opacity: 1;
+                }
+            }
+            
+            @keyframes rotate {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
+            }
+        </style>
+    </section>
     <!-- Stats Section -->
     <section class="bg-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -591,4 +747,5 @@
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96eeeb9522039a78',t:'MTc1NTE1ODQ0NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
 

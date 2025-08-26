@@ -49,26 +49,266 @@
 
     
                  
-    <!-- Hero Section -->
-    <section id="home" class="gradient-bg pt-20 pb-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Hero Section -->
+    <section id="home" class="ganesh-chaturthi-bg pt-16 pb-12 relative overflow-hidden" style="min-height: 70vh;">
+        <!-- Rangoli Pattern Background -->
+        <div class="absolute inset-0 opacity-15">
+            <svg class="w-full h-full" viewBox="0 0 800 600">
+                <defs>
+                    <pattern id="rangoli" x="0" y="0" width="150" height="150" patternUnits="userSpaceOnUse">
+                        <!-- Lotus Petals -->
+                        <g transform="translate(75,75)">
+                            <path d="M0,-60 Q20,-40 0,-20 Q-20,-40 0,-60" fill="#f97316" opacity="0.7"/>
+                            <path d="M42,-42 Q62,-22 42,-2 Q22,-22 42,-42" fill="#fb923c" opacity="0.7" transform="rotate(45)"/>
+                            <path d="M60,0 Q80,20 60,40 Q40,20 60,0" fill="#fdba74" opacity="0.7" transform="rotate(90)"/>
+                            <path d="M42,42 Q62,62 42,82 Q22,62 42,42" fill="#fed7aa" opacity="0.7" transform="rotate(135)"/>
+                            <circle cx="0" cy="0" r="15" fill="#fbbf24" opacity="0.8"/>
+                            <circle cx="0" cy="0" r="8" fill="#f59e0b" opacity="0.9"/>
+                        </g>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#rangoli)"/>
+            </svg>
+        </div>
+
+        <!-- Decorative Ganesh Elements -->
+        <div class="absolute inset-0">
+            <!-- Ganesh and Festival Elements -->
+            <div class="absolute top-10 left-10 text-8xl animate-bounce" style="filter: drop-shadow(0 0 15px rgba(251, 191, 36, 0.8));">🐘</div>
+            <div class="absolute top-20 right-20 text-6xl animate-pulse" style="animation-delay: 0.5s; filter: drop-shadow(0 0 10px rgba(249, 115, 22, 0.7));">🪔</div>
+            <div class="absolute bottom-20 left-20 text-7xl animate-spin" style="animation-duration: 10s; filter: drop-shadow(0 0 12px rgba(220, 38, 127, 0.6));">🌺</div>
+            <div class="absolute bottom-10 right-10 text-6xl animate-bounce" style="animation-delay: 1s; filter: drop-shadow(0 0 15px rgba(251, 191, 36, 0.8));">🕉️</div>
+            <div class="absolute top-1/2 left-1/4 text-5xl animate-pulse" style="animation-delay: 1.5s;">🪷</div>
+            <div class="absolute top-1/3 right-1/3 text-5xl animate-bounce" style="animation-delay: 2s;">🎊</div>
+            <div class="absolute top-2/3 left-1/2 text-4xl animate-pulse" style="animation-delay: 0.8s;">🌸</div>
+            <div class="absolute top-1/4 right-1/2 text-4xl animate-spin" style="animation-duration: 8s; animation-delay: 1.2s;">🎭</div>
+            <div class="absolute top-3/4 left-1/6 text-5xl animate-bounce" style="animation-delay: 0.3s;">🥥</div>
+            <div class="absolute bottom-1/3 right-1/6 text-4xl animate-pulse" style="animation-delay: 2.2s;">🍯</div>
+            <div class="absolute top-1/6 left-2/3 text-5xl animate-bounce" style="animation-delay: 1.8s;">🎆</div>
+            <div class="absolute bottom-2/3 right-2/3 text-4xl animate-pulse" style="animation-delay: 0.7s;">🌼</div>
+        </div>
+        
+        <!-- Festival Sparkles -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="ganesh-sparkle absolute top-1/4 left-1/4"></div>
+            <div class="ganesh-sparkle absolute top-1/3 right-1/4" style="animation-delay: 1s;"></div>
+            <div class="ganesh-sparkle absolute bottom-1/3 left-1/3" style="animation-delay: 2s;"></div>
+            <div class="ganesh-sparkle absolute bottom-1/4 right-1/3" style="animation-delay: 0.5s;"></div>
+            <div class="ganesh-sparkle absolute top-1/2 left-1/6" style="animation-delay: 1.8s;"></div>
+            <div class="ganesh-sparkle absolute bottom-1/2 right-1/6" style="animation-delay: 0.3s;"></div>
+            <div class="ganesh-sparkle absolute top-3/4 left-2/3" style="animation-delay: 2.5s;"></div>
+            <div class="ganesh-sparkle absolute top-1/6 right-2/3" style="animation-delay: 1.3s;"></div>
+            <div class="ganesh-sparkle absolute top-5/6 left-1/2" style="animation-delay: 0.8s;"></div>
+            <div class="ganesh-sparkle absolute bottom-5/6 right-1/2" style="animation-delay: 2.2s;"></div>
+        </div>
+
+        <!-- Radial Light Effects -->
+        <div class="absolute inset-0">
+            <div class="absolute top-1/4 left-1/4 w-32 h-32 bg-orange-400 rounded-full opacity-35 blur-xl animate-pulse"></div>
+            <div class="absolute bottom-1/3 right-1/4 w-40 h-40 bg-yellow-400 rounded-full opacity-30 blur-2xl animate-pulse" style="animation-delay: 1s;"></div>
+            <div class="absolute top-2/3 left-2/3 w-36 h-36 bg-red-400 rounded-full opacity-25 blur-xl animate-pulse" style="animation-delay: 2s;"></div>
+            <div class="absolute bottom-1/6 left-1/6 w-28 h-28 bg-pink-400 rounded-full opacity-30 blur-xl animate-pulse" style="animation-delay: 1.5s;"></div>
+        </div>
+
+        <!-- Lord Ganesha Central Figure -->
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+            <div class="ganesha-figure">
+                <img src="C:\Users\JNIT SERVICES\Desktop\g2 copy.png" 
+                     alt="Lord Ganesha" 
+                     class="w-48 h-60 object-cover rounded-2xl shadow-2xl"
+                     onerror="this.src=''; this.alt='Lord Ganesha image failed to load'; this.style.display='none';"
+                     style="filter: brightness(1.1) contrast(1.2) saturate(1.3);">
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
             <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
-                    Excellence in <span class="text-yellow-300">Healthcare Education</span>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 ganesh-text-glow">
+                    Excellence in <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 via-yellow-400 to-red-400 animate-pulse">Healthcare Education</span>
                 </h1>
-                <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                <p class="text-xl text-orange-100 mb-8 max-w-3xl mx-auto drop-shadow-lg font-medium">
                     Empowering the next generation of healthcare professionals with comprehensive training programs and hands-on experience
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button onclick="scrollToCourses()" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
-                        Explore Courses
+                </p><br><br><br><br><br><br>
+                <div class="flex flex-col sm:flex-row gap-10 justify-center">
+                    <button onclick="scrollToCourses()" class="ganesh-btn-primary px-8 py-4 rounded-xl font-bold text-lg transform hover:scale-110 transition-all duration-300 shadow-2xl">
+                        🐘 Explore Courses 🐘
                     </button>
-                    <button onclick="scrollToContact()" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-                        Get Started
+                    <button onclick="scrollToContact()" class="ganesh-btn-secondary px-8 py-4 rounded-xl font-bold text-lg transform hover:scale-110 transition-all duration-300 shadow-2xl">
+                        🪔 Get Started 🪔
                     </button>
                 </div>
             </div>
         </div>
+
+        <style>
+            .ganesh-chaturthi-bg {
+                background: 
+                    radial-gradient(circle at 25% 25%, rgba(249, 115, 22, 0.9) 0%, transparent 45%),
+                    radial-gradient(circle at 75% 25%, rgba(251, 191, 36, 0.8) 0%, transparent 45%),
+                    radial-gradient(circle at 50% 75%, rgba(220, 38, 127, 0.7) 0%, transparent 45%),
+                    linear-gradient(135deg, 
+                        #7c2d12 0%,     /* Deep orange-brown */
+                        #9a3412 15%,    /* Dark orange */
+                        #c2410c 30%,    /* Orange */
+                        #ea580c 45%,    /* Bright orange */
+                        #f97316 60%,    /* Orange */
+                        #fb923c 75%,    /* Light orange */
+                        #fbbf24 90%,    /* Golden */
+                        #fcd34d 100%    /* Light golden */
+                    );
+                position: relative;
+            }
+            
+            .ganesh-chaturthi-bg::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: 
+                    radial-gradient(circle at 50% 50%, rgba(251, 191, 36, 0.4) 0%, transparent 70%),
+                    conic-gradient(from 0deg at 50% 50%, 
+                        rgba(249, 115, 22, 0.3) 0deg,
+                        rgba(251, 191, 36, 0.3) 60deg,
+                        rgba(220, 38, 127, 0.3) 120deg,
+                        rgba(249, 115, 22, 0.3) 180deg,
+                        rgba(251, 191, 36, 0.3) 240deg,
+                        rgba(220, 38, 127, 0.3) 300deg,
+                        rgba(249, 115, 22, 0.3) 360deg
+                    );
+                animation: rotate 25s linear infinite;
+            }
+            
+            .ganesh-sparkle {
+                width: 5px;
+                height: 5px;
+                background: linear-gradient(45deg, #f97316, #fbbf24, #dc2626);
+                border-radius: 50%;
+                animation: ganesh-sparkle 3.5s ease-in-out infinite;
+                box-shadow: 0 0 12px #f97316, 0 0 24px #fbbf24, 0 0 36px #dc2626;
+            }
+            
+            .ganesh-text-glow {
+                text-shadow: 
+                    0 0 10px rgba(249, 115, 22, 0.8),
+                    0 0 20px rgba(251, 191, 36, 0.6),
+                    0 0 30px rgba(249, 115, 22, 0.4),
+                    0 0 40px rgba(251, 191, 36, 0.2);
+            }
+            
+            .ganesh-btn-primary {
+                background: linear-gradient(135deg, #fbbf24 0%, #f97316 50%, #ea580c 100%);
+                color: #7c2d12;
+                border: 3px solid #fbbf24;
+                box-shadow: 
+                    0 0 25px rgba(249, 115, 22, 0.7),
+                    inset 0 0 20px rgba(255, 255, 255, 0.3);
+            }
+            
+            .ganesh-btn-primary:hover {
+                background: linear-gradient(135deg, #fcd34d 0%, #fbbf24 50%, #f97316 100%);
+                box-shadow: 
+                    0 0 35px rgba(249, 115, 22, 0.9),
+                    inset 0 0 30px rgba(255, 255, 255, 0.4);
+            }
+            
+            .ganesh-btn-secondary {
+                background: linear-gradient(135deg, rgba(220, 38, 127, 0.9) 0%, rgba(249, 115, 22, 0.9) 100%);
+                color: white;
+                border: 3px solid #dc2626;
+                box-shadow: 
+                    0 0 25px rgba(220, 38, 127, 0.7),
+                    inset 0 0 20px rgba(255, 255, 255, 0.2);
+            }
+            
+            .ganesh-btn-secondary:hover {
+                background: linear-gradient(135deg, #dc2626 0%, #f97316 100%);
+                box-shadow: 
+                    0 0 35px rgba(220, 38, 127, 0.9),
+                    inset 0 0 30px rgba(255, 255, 255, 0.3);
+            }
+            
+            @keyframes ganesh-sparkle {
+                0%, 100% { 
+                    transform: scale(0) rotate(0deg);
+                    opacity: 0;
+                }
+                25% {
+                    transform: scale(0.8) rotate(90deg);
+                    opacity: 0.7;
+                }
+                50% { 
+                    transform: scale(1.2) rotate(180deg);
+                    opacity: 1;
+                }
+                75% {
+                    transform: scale(0.9) rotate(270deg);
+                    opacity: 0.8;
+                }
+            }
+            
+            @keyframes rotate {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
+            }
+            
+            /* Lord Ganesha Styling */
+            .ganesha-figure {
+                filter: drop-shadow(0 0 20px rgba(251, 191, 36, 0.8)) drop-shadow(0 0 40px rgba(249, 115, 22, 0.6));
+                animation: ganesha-glow 4s ease-in-out infinite;
+            }
+            
+            .ganesha-body {
+                fill: linear-gradient(135deg, #f97316, #fb923c);
+                stroke: #fbbf24;
+                stroke-width: 2;
+            }
+            
+            .ganesha-head {
+                fill: #fb923c;
+                stroke: #fbbf24;
+                stroke-width: 2;
+            }
+            
+            .ganesha-trunk {
+                stroke: #f97316;
+                stroke-linecap: round;
+            }
+            
+            .ganesha-crown {
+                fill: #fbbf24;
+                stroke: #f59e0b;
+                stroke-width: 1;
+            }
+            
+            .ganesha-arms, .ganesha-legs {
+                fill: #fb923c;
+                stroke: #f97316;
+                stroke-width: 1;
+            }
+            
+            .ganesha-ears {
+                fill: #fdba74;
+                stroke: #f97316;
+                stroke-width: 1;
+            }
+            
+            .ganesha-tilaka {
+                fill: #dc2626;
+            }
+            
+            @keyframes ganesha-glow {
+                0%, 100% {
+                    filter: drop-shadow(0 0 20px rgba(251, 191, 36, 0.8)) drop-shadow(0 0 40px rgba(249, 115, 22, 0.6));
+                    transform: scale(1);
+                }
+                50% {
+                    filter: drop-shadow(0 0 30px rgba(251, 191, 36, 1)) drop-shadow(0 0 60px rgba(249, 115, 22, 0.8));
+                    transform: scale(1.05);
+                }
+            }
+        </style>
     </section>
     <!-- Stats Section -->
     <section class="bg-white py-16">
@@ -591,6 +831,7 @@
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96eeeb9522039a78',t:'MTc1NTE1ODQ0NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
 
 
 

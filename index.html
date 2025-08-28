@@ -344,6 +344,32 @@
         </style>
     </section>
  
+<div id="chatbox" style="width:400px; height:300px; border:1px solid #ccc; overflow-y:auto; padding:10px; font-family:Arial;"></div>
+
+<input type="text" id="userInput" placeholder="Ask health related question..." style="width:300px;">
+<button onclick="sendMessage()">Send</button>
+
+<script>
+async function sendMessage() {
+  const input = document.getElementById("userInput");
+  const message = input.value;
+  
+  if (!message) return;
+  
+  document.getElementById("chatbox").innerHTML += "<p><b>You:</b> " + message + "</p>";
+  input.value = "";
+
+  // Example API call (replace with your backend or OpenAI key)
+  const response = await fetch("https://your-backend-server/ai", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ query: message })
+  });
+  const data = await response.json();
+
+  document.getElementById("chatbox").innerHTML += "<p><b>AI:</b> " + data.reply + "</p>";
+}
+</script>
 
 
     <!-- Stats Section -->
@@ -916,6 +942,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96eeeb9522039a78',t:'MTc1NTE1ODQ0NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
 
 
 

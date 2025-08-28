@@ -46,25 +46,7 @@
             </div>
         </div>
 
-         <div style="text-align:center; font-family:Arial; margin-top:20px;">
-  👥 Visitors: <span id="visitors">Loading...</span>
-</div>
-
-<script>
-// Unique key banalo (apna domain ya kuch bhi likh sakte ho)
-const counterKey = "www.radhikainstitute.com"; 
-
-fetch(`https://api.countapi.xyz/hit/${counterKey}/visits`)
-  .then(res => res.json())
-  .then(res => {
-    document.getElementById("visitors").innerText = res.value;
-  })
-  .catch(err => {
-    document.getElementById("visitors").innerText = "Error loading counter";
-    console.error(err);
-  });
-</script>
-
+        
 </nav>
 
   
@@ -335,6 +317,25 @@ fetch(`https://api.countapi.xyz/hit/${counterKey}/visits`)
             }
         </style>
     </section>
+     <div style="text-align:center; font-family:Arial; margin-top:20px;">
+  👥 Visitors: <span id="visitors">Loading...</span>
+</div>
+
+<script>
+// Unique key banalo (apna domain ya kuch bhi likh sakte ho)
+const counterKey = "www.radhikainstitute.com"; 
+
+fetch(`https://api.countapi.xyz/hit/${counterKey}/visits`)
+  .then(res => res.json())
+  .then(res => {
+    document.getElementById("visitors").innerText = res.value;
+  })
+  .catch(err => {
+    document.getElementById("visitors").innerText = "Error loading counter";
+    console.error(err);
+  });
+</script>
+
     <!-- Stats Section -->
     <section class="bg-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -905,6 +906,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96eeeb9522039a78',t:'MTc1NTE1ODQ0NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
 
 
 

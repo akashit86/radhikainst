@@ -78,8 +78,44 @@
 </div>
 </nav>
      
-         <!-- Hero Section -->
-    <section id="home" class="navratri-gradient pt-20 pb-16 relative overflow-hidden">
+         <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Education - Navratri Theme</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .navratri-gradient {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 25%, #ffcc02 50%, #c1272d 75%, #8b1538 100%);
+        }
+        
+        .dance-animation {
+            animation: dance 2s ease-in-out infinite;
+        }
+        
+        @keyframes dance {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            25% { transform: translateY(-10px) rotate(2deg); }
+            50% { transform: translateY(-5px) rotate(-1deg); }
+            75% { transform: translateY(-8px) rotate(1deg); }
+        }
+        
+        .sparkle {
+            animation: sparkle 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes sparkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.1); }
+        }
+    </style>
+</head>
+
+
+
+<!-- Hero Section -->
+    <section id="home" class="gradient-bg pt-20 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section id="home" class="navratri-gradient pt-20 pb-16 relative overflow-hidden">
         <!-- Decorative Navratri Elements -->
         <div class="absolute inset-0 opacity-20">
             <div class="absolute top-10 left-10 text-4xl dance-animation">🪔</div>
@@ -89,24 +125,25 @@
         </div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
             <div class="text-center">
                 <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
                     Excellence in <span class="text-yellow-300">Healthcare Education</span>
                 </h1>
-                <p class="text-xl text-orange-100 mb-8 max-w-3xl mx-auto">
+                <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
                     Empowering the next generation of healthcare professionals with comprehensive training programs and hands-on experience
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button onclick="scrollToCourses()" class="bg-yellow-400 text-red-800 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors shadow-lg border-2 border-red-600">
+                    <button onclick="scrollToCourses()" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
                         Explore Courses
                     </button>
-                    <button onclick="scrollToContact()" class="border-2 border-yellow-300 text-yellow-300 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 hover:text-red-800 transition-colors">
+                    <button onclick="scrollToContact()" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
                         Get Started
                     </button>
                 </div>
-                
-                <!-- Sacred Devi Mantra -->
-                <div class="mt-12 bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-yellow-300/30 max-w-4xl mx-auto">
+            </div>
+        </div>
+<div class="mt-12 bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-yellow-300/30 max-w-4xl mx-auto">
                     <div class="text-center">
                         <div class="text-2xl mb-4">🙏</div>
                         <p class="text-yellow-200 text-lg font-medium mb-4 leading-relaxed">
@@ -115,13 +152,6 @@
                             नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः॥<br>
                             
                         </p>
-                        <p class="text-orange-200 text-sm italic">
-                            "Salutations to the Divine Mother who resides in all beings in various forms - as consciousness, intelligence, peace, strength, compassion, and motherly love"
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
                     
@@ -695,6 +725,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96eeeb9522039a78',t:'MTc1NTE1ODQ0NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
 
 
 

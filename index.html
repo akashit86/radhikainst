@@ -83,28 +83,46 @@
      
          
 
-<!-- Hero Section -->
-    <section id="home" class="gradient-bg pt-20 pb-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
-                    Excellence in <span class="text-yellow-300">Healthcare Education</span>
-                </h1>
-                <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-                    Empowering the next generation of healthcare professionals with comprehensive training programs and hands-on experience
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button onclick="scrollToCourses()" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
-                        Explore Courses
-                    </button>
-                    <button onclick="scrollToContact()" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-                        Get Started
-                    </button>
-                </div>
+<!-- Hero Section - Holi Theme -->
+<section id="home" class="relative pt-20 pb-16 overflow-hidden"
+    style="background: linear-gradient(135deg, #ff0080, #ff8c00, #40e0d0, #8a2be2); background-size: 400% 400%; animation: gradientMove 10s ease infinite;">
+
+    <!-- Color Overlay Effect -->
+    <div class="absolute inset-0 bg-white opacity-10 backdrop-blur-sm"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+                Celebrate <span class="text-yellow-300">Holi of Knowledge</span> 🎨
+            </h1>
+
+            <p class="text-xl text-white mb-8 max-w-3xl mx-auto font-medium">
+                रंगों की तरह फैलाएं ज्ञान — Join us in creating a brighter, healthier future through quality education and hands-on training.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="scrollToCourses()" 
+                    class="bg-yellow-300 text-pink-700 px-8 py-3 rounded-full font-semibold hover:scale-105 transform transition shadow-xl">
+                    Explore Courses 🌈
+                </button>
+
+                <button onclick="scrollToContact()" 
+                    class="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-yellow-200 transition shadow-xl">
+                    Get Started 🎉
+                </button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
+<!-- Gradient Animation -->
+<style>
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+</style>
                     
     <!-- Stats Section -->
     <section class="bg-white py-16">
@@ -685,6 +703,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96eeeb9522039a78',t:'MTc1NTE1ODQ0NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
 
 
 
